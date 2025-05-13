@@ -31,7 +31,6 @@ Example (HTML/JSX):
 
 <div class="ticket">
   <h2 class="ticket-title">Coding Conf 2025</h2>
-  <p class="ticket-id">#123456</p>
 </div>
 
 Make sure to include styles.css in your HTML or React entry point.
