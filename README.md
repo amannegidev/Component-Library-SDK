@@ -1,12 +1,35 @@
-# React + Vite
+A responsive and elegant UI layout for profile and ticket pages — designed with custom components and handcrafted CSS. Inspired by the Coding Conf 2025 aesthetic, this UI is framework-free, making it easy to plug into any React or HTML project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ **Features
+-Fully responsive layout
+-Custom components (no Bootstrap, Tailwind, or external UI libraries)
+-Clean, themeable CSS variables
+-Ticket and profile views with upload and preview support
+-Developer-friendly class structure for easy integration
 
-Currently, two official plugins are available:
+**How to Run the Demo
+Using Vite (recommended for React):
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+git clone https://github.com/your-username/ticket-profile-ui.git
+cd ticket-profile-ui
+Install dependencies:
+npm install
+Run the development server:
+npm run dev
 
-## Expanding the ESLint configuration
+**How to Use the Components
+All components are written using custom HTML/CSS (or React if you're using JSX).
+You can copy the structure from each component file (e.g., Ticket.jsx, ProfileCard.jsx) and reuse them in your project.
+The styling is scoped via class names and the shared styles.css.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Example (HTML/JSX):
+
+<div class="ticket">
+  <h2 class="ticket-title">Coding Conf 2025</h2>
+  <p class="ticket-id">#123456</p>
+</div>
+
+Make sure to include styles.css in your HTML or React entry point.
+<link rel="stylesheet" href="./styles.css" />
+
