@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTicket } from '../context/ticketContext';
+import { useTicket } from '../context/ticketContext.jsx';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import CompactTicket from '../components/TicketComponent'; // Import the new component
