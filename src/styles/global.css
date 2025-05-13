@@ -1,0 +1,387 @@
+/* ========== ROOT VARIABLES ========== */
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e1e2f;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent-primary: #6366f1;
+  --border-primary: #334155;
+  --border-secondary: #475569;
+}
+
+/* ========== BASE TYPOGRAPHY ========== */
+body, .typography {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-primary);
+}
+
+.heading1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.heading2 {
+  font-size: 19px;
+  font-family: monospace;
+  color: orangered;
+  margin-bottom: 0.5rem;
+}
+
+.heading3,
+.event-info h3,
+.user-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.subheading,
+.paragraph {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.caption {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.email {
+  font-weight: 600;
+  color: rgb(215, 192, 183);
+}
+
+/* ========== LAYOUT CONTAINERS ========== */
+.profile-page,
+.ticket-page,
+.ticket-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--bg-primary);
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ========== FORM STYLES ========== */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-primary);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.input-field {
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+.input-field:focus {
+  border-color: var(--accent-primary);
+}
+.input-field::placeholder {
+  color: var(--text-muted);
+}
+
+/* ========== BUTTON STYLES ========== */
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.primary {
+  background-color: rgb(230, 225, 225);
+  color: black;
+  padding: 16px 0;
+}
+.primary:hover {
+  background-color: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-secondary);
+}
+.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ========== AVATAR UPLOAD ========== */
+.avatar-uploader,
+.upload-section {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.upload-section {
+  background: var(--bg-card);
+  border: 1px dashed var(--border-secondary);
+}
+.upload-section:hover {
+  border-color: var(--accent-primary);
+}
+
+.avatar-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  color: var(--accent-primary);
+}
+
+.avatar-preview,
+.ticket-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-primary);
+  display: block;
+  margin: 0 auto;
+}
+
+.ticket-avatar {
+  border-width: 3px;
+}
+
+/* ========== TICKET PAGE ========== */
+.ticket-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ticket-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.ticket-header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.success-message {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.success-message h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.success-message p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.ticket-card {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-primary);
+  position: relative;
+}
+
+/* Compact Ticket inside Ticket Card */
+.ticket-card .compact-ticket {
+  background: transparent;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.ticket-card .compact-ticket .ticket-avatar,
+.ticket-card .compact-ticket .ticket-avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+}
+.ticket-card .compact-ticket .event-info {
+  margin-bottom: 1rem;
+}
+
+/* ========== COMPACT TICKET ========== */
+.compact-ticket {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.compact-ticket .event-info h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+.compact-ticket .event-info p {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.divider-line {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+/* ========== USER + EVENT INFO ========== */
+.event-info,
+.user-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.event-info p,
+.user-info p {
+  color: whitesmoke;
+  font-size: 0.875rem;
+}
+.user-info {
+  margin-top: 1.5rem;
+}
+
+/* ========== DOWNLOAD BUTTON ========== */
+.download-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.download-button:hover {
+  background-color: #4f46e5;
+}
+
+/* ========== AVATAR TICKET ========== */
+.avatar-ticket {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 10px 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #1f1d3b, #dddae9);
+}
+.avatar-ticket .ticket-header {
+  margin-bottom: 16px;
+}
+.avatar-ticket .event-title {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 600;
+  color: #fff8f8;
+  line-height: 1.3;
+}
+.avatar-ticket .event-details {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+  font-weight: 400;
+}
+.avatar-ticket .user-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.avatar-ticket .user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 18%;
+  object-fit: cover;
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+}
+.avatar-ticket .user-info {
+  text-align: left;
+}
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+.user-handle {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ========== UTILITIES ========== */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.uploader-info { color: white; }
+.divider {
+  height: 1px;
+  background-color: var(--border-primary);
+  margin: 1.5rem 0;
+}
+.confirmation-message {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.confirmation-message p {
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.hero-text{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
