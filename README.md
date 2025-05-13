@@ -8,8 +8,8 @@ A responsive and elegant UI layout for profile and ticket pages — designed wit
 
 
 <div float="left">
-  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101513.png" width="300" height="500px" object-fit="cover" />
-  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101732.png" width="300" height="500px" object-fit="cover" />
+  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101513.png" width="300" height="500px" object-fit="contain" />
+  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101732.png" width="300" height="500px" object-fit="contain" />
 </div>
 
 
