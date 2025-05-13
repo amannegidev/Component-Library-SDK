@@ -7,13 +7,11 @@ A responsive and elegant UI layout for profile and ticket pages — designed wit
 -Developer-friendly class structure for easy integration.
 
 
-<div float="left style="display: flex; gap: 10px;">
-  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101513.png" 
-       style="height: 400px; object-fit: contain;" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101513.png" height="300" style="object-fit: contain; margin-right: 10px;" />
+  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101732.png" height="300" style="object-fit: contain;" />
+</p>
 
-  <img src="https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101732.png" 
-       style="height: 400px; object-fit: contain;" />
-</div>
 
 
 
