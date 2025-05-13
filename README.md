@@ -11,7 +11,7 @@ A responsive and elegant UI layout for profile and ticket pages — designed wit
 Using Vite (recommended for React):
 Clone the repository:
 
-git clone https://github.com/your-username/ticket-profile-ui.git
+git clone https://github.com/your-username/Component-Library-SDK.git
 cd ticket-profile-ui
 Install dependencies:
 npm install
