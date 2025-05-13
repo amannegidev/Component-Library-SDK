@@ -1,11 +1,15 @@
 A responsive and elegant UI layout for profile and ticket pages — designed with custom components and handcrafted CSS. Inspired by the Coding Conf 2025 aesthetic, this UI is framework-free, making it easy to plug into any React or HTML project.
 
  **Features
--Fully responsive layout
 -Custom components (no Bootstrap, Tailwind, or external UI libraries)
 -Clean, themeable CSS variables
 -Ticket and profile views with upload and preview support
--Developer-friendly class structure for easy integration
+-Developer-friendly class structure for easy integration.
+
+
+![Image 1](https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101732.png)
+![Image 2](https://raw.githubusercontent.com/amannegidev/Component-Library-SDK/refs/heads/main/Screenshot%202025-05-13%20101513.png)
+
 
 **How to Run the Demo
 Using Vite (recommended for React):
