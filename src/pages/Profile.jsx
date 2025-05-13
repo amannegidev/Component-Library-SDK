@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import Input from '../components/Input';
 import Typography from '../components/Typography';
 import AvatarUploader from '../components/AvatarUplaoder';
-import { useTicket } from '../context/TicketContext';
+import { useTicket } from '../context/ticketContext.jsx';
 
 const DemoProfile = () => {
   const [form, setForm] = useState({
